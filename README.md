@@ -11,7 +11,7 @@ Then just go to the folder containing the file "bitcoin-balance.py" to run the a
 
 ## py bitcoin-balance.py
 
-This code is just a study example and does not run too fast to avoid spamming Blockchain, but you can modify it by adding the multiprocessor module.
+This code is just a study example and does not run too fast to avoid spamming Blockchain Server, but you can modify it by adding the multiprocessor module.
 
 
 ![bitcoin-balance](https://user-images.githubusercontent.com/89576432/130980323-39946a4e-a589-4061-b914-29adff918349.jpg)
