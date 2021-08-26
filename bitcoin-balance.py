@@ -26,7 +26,6 @@ count = 1
 while True:
     try:
         if count < 21:
-            # Generate a random private key
             blockcipher = random_key()
             my_public_key1 = privtopub(blockcipher)
             blockchain = random_key()
@@ -60,9 +59,19 @@ while True:
             compressed_json = json.loads(compressed_block.text)[bitcoin.pubkey_to_address(hex_compressed_public_key)]
             multi_block = requests.get('https://blockchain.info/balance?active='+ str(my_multi_address))
             multi_json = json.loads(multi_block.text)[my_multi_address]
-            if int(uncompressed_json["final_balance"]) > 0 or int(compressed_json["final_balance"]) > 0 or int(multi_json["final_balance"]) > 0:
+            if int(uncompressed_json["final_balance"]) > 0: 
                 balance = open("Lottery_BTC.txt","a+")
-                balance.write(" Uncompressed Private Key\t\t:  " + wif_encoded_private_key +  "\n Compressed Private key\t\t:  " + wif_compressed_private_key + "\n Uncompressed Bitcoin Address\t:  " + bitcoin.pubkey_to_address(public_key) + " \t\t\t\t\t\t Uncompressed Balance: " + str(int(uncompressed_json["final_balance"])) + "\n Compressed Bitcoin Address\t\t:  " + bitcoin.pubkey_to_address(hex_compressed_public_key) + "\t\t\t\t\t\t Compressed Balance: " + str(int(compressed_json["final_balance"])) + "\n Multi BTC Address\t\t\t:  " + str(my_multi_address) + "\n Third Private Key\t\t\t:  " + str(my_private_key3) + "\t\t\t Third Balance: " + str(int(multi_json["final_balance"])) + "\n Private Key Hexadecimal\t\t:  " + str(private_key) + "\n\n")
+                balance.write("Uncompressed Private Key\t\t:  " + wif_encoded_private_key + "\n Uncompressed Bitcoin Address\t:  " + bitcoin.pubkey_to_address(public_key) + " \n Uncompressed Balance: " + str(int(uncompressed_json["final_balance"])) + "\n\n")
+                balance.close()
+                print("\nYou have just rung the bell of BTC Lottery !!!")
+            elif int(compressed_json["final_balance"]) > 0:     
+                balance = open("Lottery_BTC.txt","a+")
+                balance.write("Compressed Private key\t:  " + wif_compressed_private_key + "\n Compressed Bitcoin Address\t:  " + bitcoin.pubkey_to_address(hex_compressed_public_key) + "\n Compressed Balance: " + str(int(compressed_json["final_balance"])) + "\n\n")
+                balance.close()
+                print("\nYou have just rung the bell of BTC Lottery !!!")           
+            elif int(multi_json["final_balance"]) > 0:
+                balance = open("Lottery_BTC.txt","a+")
+                balance.write("Multi BTC Address\t:  " + str(my_multi_address) + "\n Third Private Key\t:  " + str(my_private_key3) + "\n Third Balance: " + str(int(multi_json["final_balance"])) + "\n\n")
                 balance.close()
                 print("\nYou have just rung the bell of BTC Lottery !!!")
             else:
@@ -84,8 +93,7 @@ while True:
             btc += 20
             n += 1
             for i in range(toolbar_width):
-               time.sleep(2) # do real work here
-               # update the bar
+               time.sleep(2)
                sys.stdout.write(" ")
                sys.stdout.write("|||")
                sys.stdout.flush()
@@ -96,5 +104,5 @@ while True:
     except:
         print("\t Something went wrong, please wait ...\n")
         time.sleep(15)
-        print("\t Error solved, restart ... \n")
+        print("\t Error solved, Restarting ... \n")
         count = 1
