@@ -12,3 +12,6 @@ Then just go to the folder containing the file "btc-balance.py" to run the algor
 ## py btc-balance.py
 
 This code is only for example study and does not run too fast to avoid spamming Blockchain, but you can modify it by adding the multiprocessing module.
+
+
+![bitcoin-balance](https://user-images.githubusercontent.com/89576432/130980323-39946a4e-a589-4061-b914-29adff918349.jpg)
