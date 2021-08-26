@@ -9,7 +9,7 @@ Using it is easy, you only have to type the command below to install the bitcoin
 
 Then just go to the folder containing the file "btc-balance.py" to run the algorithm:
 
-## py btc-balance.py
+## py bitcoin-balance.py
 
 This code is only for example study and does not run too fast to avoid spamming Blockchain, but you can modify it by adding the multiprocessing module.
 
