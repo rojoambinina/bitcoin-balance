@@ -7,7 +7,7 @@ Using it is easy, you only have to type the command below to install the bitcoin
 
 ## pip install bitcoin
 
-Then just go to the folder containing the file "btc-balance.py" to run the algorithm:
+Then just go to the folder containing the file "bitcoin-balance.py" to run the algorithm:
 
 ## py bitcoin-balance.py
 
