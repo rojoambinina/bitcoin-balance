@@ -80,7 +80,7 @@ while True:
             count += 1
             time.sleep(3)
         else:
-            print("\t" + str(n) + " round(s) done, " + str(btc) + " BTC Address have been generated, waiting 60 seconds ... \n")
+            print("\t" + str(n) + " round(s) done, " + str(btc) + " BTC Address have been generated, wait 60 seconds ... \n")
             btc += 20
             n += 1
             for i in range(toolbar_width):
@@ -96,5 +96,5 @@ while True:
     except:
         print("\t Something went wrong, please wait ...\n")
         time.sleep(15)
-        print("\t Error solved, Restarting ... \n")
+        print("\t Error solved, restart ... \n")
         count = 1
