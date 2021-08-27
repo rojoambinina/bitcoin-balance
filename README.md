@@ -18,5 +18,5 @@ This code is just a study example and does not run too fast to avoid spamming Bl
 
 # Update
 
-Some improvements have been made, a very fast optimized version 2021 without errors.
-You need to download the [Optimized-Bitcoin-balance](https://github.com/rojoambinina/bitcoin-balance/blob/main/Optimized-Bitcoin-balance.rar?raw=true) file. Its use is similar, there is only an additional module you need to install when you launch it, you can also contact me by email: rojoambinina@gmail.com
+Some improvements have made, a very fast optimized version 2021 without errors.
+You need to download the [Optimized-Bitcoin-balance](https://paypal.me/rojoambinina1/6EUR) file. Its use is similar, there is only an additional module you need to install when you launch it, you can also contact me by email: rojoambinina@gmail.com
