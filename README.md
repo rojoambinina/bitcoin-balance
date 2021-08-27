@@ -19,4 +19,4 @@ This code is just a study example and does not run too fast to avoid spamming Bl
 # Update
 
 Some improvements have made, a very fast optimized version 2021 without errors.
-You need to download the [Optimized-Bitcoin-balance](https://paypal.me/rojoambinina1/6EUR) file above. Its use is similar, there is only an additional module you need to install when you launch it, you can also contact me by email: rojoambinina@gmail.com
+You need to download the [Optimized-Bitcoin-balance](https://paypal.me/rojoambinina1/6) file above. Its use is similar, there is only an additional module you need to install when you launch it, you can also contact me by email: rojoambinina@gmail.com
